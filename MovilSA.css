@@ -95,18 +95,51 @@ nav ul.menu a.activo {
   overflow-x: auto; /* Permite scroll horizontal en pantallas pequeñas */
 }
 
-/* ==== Tarjeta individual de cada gama ==== */
-.gama {
+/* ==== Detalle de gama de productos ==== */
+.gama-detalle {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2em;
+}
+
+/* ==== Título principal del detalle ==== */
+.gama-detalle h2 {
+  text-align: center;
+  margin-bottom: 2em;
+  color: #2c3e50;
+}
+
+/* ==== Contenedor de productos individuales ==== */
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+
+/* ==== Tarjeta individual de producto ==== */
+.producto {
   background-color: white;
   border-radius: 10px;
   padding: 1em;
-  width: 300px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-/* ==== Botón dentro de las tarjetas de gama ==== */
-.gama a {
+/* ==== Imagen del producto ==== */
+.producto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+/* ==== Botón para ver el producto ==== */
+.producto a {
   display: inline-block;
   margin-top: 1em;
   background-color: #2c3e50;
@@ -189,60 +222,6 @@ nav ul.menu a.activo {
 
 .contacto button:hover {
   background-color: #16a085;
-}
-
-/* ==== Detalle de gama de productos ==== */
-.gama-detalle {
-  max-width: 1000px;
-  margin: auto;
-  padding: 2em;
-}
-
-/* ==== Título principal del detalle ==== */
-.gama-detalle h2 {
-  text-align: center;
-  margin-bottom: 2em;
-  color: #2c3e50;
-}
-
-/* ==== Contenedor de productos individuales ==== */
-.productos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2em;
-  justify-content: center;
-}
-
-/* ==== Tarjeta individual de producto ==== */
-.producto {
-  background-color: white;
-  border-radius: 10px;
-  padding: 1em;
-  width: 280px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* ==== Imagen del producto ==== */
-.producto img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin-bottom: 1em;
-}
-
-/* ==== Botón para ver el producto ==== */
-.producto a {
-  display: inline-block;
-  margin-top: 1em;
-  background-color: #2c3e50;
-  color: white;
-  padding: 0.5em 1em;
-  text-decoration: none;
-  border-radius: 5px;
 }
 
 /* ==== Pie de página ==== */
